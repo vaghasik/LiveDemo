@@ -2,6 +2,16 @@
   float: right;
 }
 
+.title-name {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.small-label {
+  font-size: 11px;
+  color: #ccc;
+}
+
 .outer-size {
   margin: 20px;
   font-size: 13px;
@@ -84,6 +94,19 @@ ul.enlarge span img {
   height: 620px;
   background-color: #f2f2f2;
 }
+.sourcing-event > div {
+  margin: 10px;
+}
+.sourcing-event .file-icon {
+  display: inline-block;
+  font-size: 27px;
+  color: #ccc;
+  float: left;
+  padding: 5px 5px 0 0;
+}
+.sourcing-event .file-name {
+  font-size: 12px;
+}
 
 .spend-overview {
   border: 1px solid #ccc;
@@ -102,8 +125,4 @@ ul.enlarge span img {
 }
 .material-detail .material-name {
   font-size: 18px;
-}
-.material-detail .small-label {
-  font-size: 11px;
-  color: #ccc;
 }

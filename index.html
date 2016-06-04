@@ -1,9 +1,42 @@
 <!doctype html>
-<html ng-app="cmsApp">
+<html ng-app="bomApp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Content Management System</title>
+    <title>Live Demo</title>
 
-    <link rel="stylesheet" href="../../bs/css/bootstrap-flat.css">
+	<!-- lib css files -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+	<!-- Coustome css files -->
+	<link rel="stylesheet" type="text/css" href="app/css/main.css">
+</head>
+<body>
+	<section class="outer-size">
+		<hr />
+		<div class="top-edit">
+			<button class="float-right">Edit</button>
+		</div>
+		<section class="col-md-4">
+			<div ng-include src="'app/view/partials/image.html'"></div>
+			<div ng-include src="'app/view/partials/sourcing_events.html'"></div>
+		</section>
+		<section class="col-md-8">
+			<div ng-include src="'app/view/partials/material_details.html'"></div>
+			<div ng-include src="'app/view/partials/price_over_time.html'"></div>
+			<div ng-include src="'app/view/partials/spend_overview.html'"></div>
+		</section>
+	</section>
+
+<!-- lib js files -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>	
+	
+<!-- coustom js files -->
+<script src="app/script/appModule.js"></script>
+<script src="app/script/ctrls/imageCtrl.js"></script>
+</body>
+</html>

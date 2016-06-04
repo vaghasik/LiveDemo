@@ -1,0 +1,109 @@
+.float-right {
+  float: right;
+}
+
+.outer-size {
+  margin: 20px;
+  font-size: 13px;
+}
+.outer-size .top-edit {
+  height: 25px;
+}
+
+.image-side {
+  border: 1px solid #ccc;
+  height: 250px;
+  margin-bottom: 5px;
+}
+.image-side img {
+  width: 300px;
+  height: 230px;
+}
+
+ul.enlarge {
+  list-style-type: none;
+  padding-left: 0;
+}
+ul.enlarge li {
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  border: 1px solid #acd4ed;
+  margin: 0 10px 5px 0;
+}
+ul.enlarge li:hover {
+  z-index: 50;
+  cursor: pointer;
+}
+ul.enlarge li:hover span {
+  top: -250px;
+  left: 20px;
+}
+ul.enlarge li:hover:nth-child(2) span {
+  left: -30px;
+}
+ul.enlarge li:hover:nth-child(3) span {
+  left: -90px;
+}
+ul.enlarge li.active {
+  z-index: 50;
+  cursor: pointer;
+}
+ul.enlarge li.active span {
+  top: -250px;
+  left: 20px;
+}
+ul.enlarge li.active:nth-child(2) span {
+  left: -30px;
+}
+ul.enlarge li.active:nth-child(3) span {
+  left: -90px;
+}
+ul.enlarge li img {
+  width: 50px;
+  height: 50px;
+}
+ul.enlarge span {
+  position: absolute;
+  left: -9999px;
+}
+ul.enlarge span img {
+  width: 300px;
+  height: 230px;
+  padding: 2px;
+}
+
+.price-over-time {
+  border: 1px solid #ccc;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.sourcing-event {
+  border: 1px solid #ccc;
+  height: 620px;
+  background-color: #f2f2f2;
+}
+
+.spend-overview {
+  border: 1px solid #ccc;
+  height: 300px;
+}
+
+.material-detail {
+  height: 322px;
+}
+.material-detail > div {
+  margin-bottom: 15px;
+}
+.material-detail > div > span {
+  display: inline-block;
+  width: 200px;
+}
+.material-detail .material-name {
+  font-size: 18px;
+}
+.material-detail .small-label {
+  font-size: 11px;
+  color: #ccc;
+}

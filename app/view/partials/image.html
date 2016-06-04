@@ -1,0 +1,13 @@
+<div ng-controller="imageCtrl">
+	<div class="image-side">
+		<!-- <img src="app/img/piston-thumb.jpg" alt=""> -->
+	</div>
+	<div>
+		<ul class="enlarge">
+			<li ng-repeat="image in images" ng-click="select($index)" ng-class="{active: $index===selectedIndex}">
+				<img src="{{ image.img }}" alt="Gear"/>
+				<span><img src="{{ image.img }}" alt="Gear" /></span>
+			</li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+.material-detail {
+	height: 322px;
+	>div {
+		margin-bottom: 15px;
+		>span {
+			display: inline-block;
+    		width: 200px;
+    	}
+	}
+	.material-name {
+		font-size: 18px;
+	}
+	.small-label{
+		font-size: 11px;
+    	color: #ccc;
+    }
+}

@@ -8,6 +8,7 @@ grunt appServe
 grunt sass2css (if needed)
 
 start localhost:9100 and run index file.
+http://localhost:9001/index.html
 
 bower install angular --save-dev
 bower install bootstrap --save-dev

@@ -28,3 +28,5 @@ webkit browser only hack
 }
 
 http://stackoverflow.com/questions/20541306/how-to-write-a-css-hack-for-ie-11
+
+http://stackoverflow.com/questions/16348489/is-there-a-css-hack-for-safari-only-not-chrome

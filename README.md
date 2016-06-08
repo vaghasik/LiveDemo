@@ -27,4 +27,4 @@ webkit browser only hack
   /* webkit specific styles go here */  
 }
 
-
+http://stackoverflow.com/questions/20541306/how-to-write-a-css-hack-for-ie-11

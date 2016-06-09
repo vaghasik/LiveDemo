@@ -10,7 +10,11 @@
     	font-size: 27px;
     	color: #ccc;
     	float: left;
-    	padding: 5px 5px 0 0;
+    	padding: 0 5px 0 0;
+    	img {
+    		height: 38px;
+    		width: 38px;
+    	}
     }
     .file-name {
         font-size: 12px;

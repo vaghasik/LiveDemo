@@ -1,12 +1,6 @@
 
 .image-side{
-	border: 1px solid #ccc;
 	height: 250px;
-    margin-bottom: 5px;
-    img {
-        width: 300px;
-    	height: 230px;
-    }
 }
 ul.enlarge{
 	list-style-type:none;
@@ -21,28 +15,34 @@ ul.enlarge{
 			z-index: 50;
 			cursor:pointer;
 			span { 
+				width: 510%;
 				top: -250px;
-				left: 20px;
+				left: -1px;
 			}
 			&:nth-child(2) span{
-				left: -30px; 
+				width: 103%;
+				left: -63px; 
 			}
 			&:nth-child(3) span{
-				left: -90px; 
+				width: 103%;
+				left: -125px; 
 			}
 		}
 		&.active {
 			z-index: 50;
 			cursor:pointer;
 			span { 
+				width: 510%;
 				top: -250px;
-				left: 20px;
+				left: -1px;
 			}
 			&:nth-child(2) span{
-				left: -30px; 
+				width: 103%;
+				left: -63px; 
 			}
 			&:nth-child(3) span{
-				left: -90px; 
+				width: 103%;
+				left: -125px; 
 			}
 		}
 		img {
@@ -54,9 +54,44 @@ ul.enlarge{
 		position:absolute;
 		left: -9999px;
 		img {
-			width: 300px;
-    		height: 230px;
-			padding:2px;
+			
+    		height: 240px;
+			border: 1px solid #ccc;
 		}
 	}
+}
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+ul.enlarge span img{
+  	width: 319px !important;
+ 	height: 240px;
+	border: 1px solid #ccc;
+}
+ul.enlarge li:hover span {
+	width: 319px !important;
+  top: -250px;
+  left: -1px;
+}
+ul.enlarge li:hover:nth-child(2) span {
+width: 319px !important;
+  left: -63px;
+}
+ul.enlarge li:hover:nth-child(3) span {
+width: 319px !important;
+  left: -125px;
+}
+ul.enlarge li.active span {
+width: 319px !important;
+  top: -250px;
+  left: -1px;
+}
+ul.enlarge li.active:nth-child(2) span {
+width: 319px !important;
+  left: -63px;
+}
+ul.enlarge li.active:nth-child(3) span {
+width: 319px !important;
+  left: -125px;
+}
 }

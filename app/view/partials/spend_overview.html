@@ -1,3 +1,21 @@
-<div class="spend-overview">
-	<div class="title-name">Spend overview</div>
+<div class="spend-overview" ng-controller="spendOverviewCtrl">
+	<div class="row-inline row-height">
+	<div class="title-name row-inline">Spend overview
+	<span class="float-right row-inline">
+		<span class="total-name">Total spend</span>
+		<span class="">$31,400</span>
+	</span>
+	</div>
+	<div>
+		<table>
+			<tr ng-repeat="item in items">
+			<td><a href="#">{{ item.productName }}</a> <br><span></span></td>
+			<td><a href="#">{{ item.bomName }}</a> <br><span></span></td>
+			<td><a href="#">{{ item.manufacturer1 }}</a> <span>{{ item.amount1 }}</span><br> <span></span></td>
+			<td><a href="#">{{ item.supplier1 }}</a> <span>{{ item.supplier1amount }}</span> <br >
+				<a href="#">{{ item.supplier2 }}</a> <span>{{ item.supplier2amount }}</span>
+			</td>
+			</tr>
+		</table>
+	</div>
 </div>

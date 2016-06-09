@@ -12,8 +12,13 @@
   color: #ccc;
 }
 
+.row-inline {
+  display: inline;
+}
+
 .outer-size {
   margin: 20px;
+  padding: 20px;
   font-size: 13px;
 }
 .outer-size .top-edit {
@@ -21,13 +26,7 @@
 }
 
 .image-side {
-  border: 1px solid #ccc;
   height: 250px;
-  margin-bottom: 5px;
-}
-.image-side img {
-  width: 300px;
-  height: 230px;
 }
 
 ul.enlarge {
@@ -46,28 +45,34 @@ ul.enlarge li:hover {
   cursor: pointer;
 }
 ul.enlarge li:hover span {
+  width: 510%;
   top: -250px;
-  left: 20px;
+  left: -1px;
 }
 ul.enlarge li:hover:nth-child(2) span {
-  left: -30px;
+  width: 103%;
+  left: -63px;
 }
 ul.enlarge li:hover:nth-child(3) span {
-  left: -90px;
+  width: 103%;
+  left: -125px;
 }
 ul.enlarge li.active {
   z-index: 50;
   cursor: pointer;
 }
 ul.enlarge li.active span {
+  width: 510%;
   top: -250px;
-  left: 20px;
+  left: -1px;
 }
 ul.enlarge li.active:nth-child(2) span {
-  left: -30px;
+  width: 103%;
+  left: -63px;
 }
 ul.enlarge li.active:nth-child(3) span {
-  left: -90px;
+  width: 103%;
+  left: -125px;
 }
 ul.enlarge li img {
   width: 50px;
@@ -78,15 +83,60 @@ ul.enlarge span {
   left: -9999px;
 }
 ul.enlarge span img {
-  width: 300px;
-  height: 230px;
-  padding: 2px;
+  height: 240px;
+  border: 1px solid #ccc;
 }
 
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  ul.enlarge span img {
+    width: 319px !important;
+    height: 240px;
+    border: 1px solid #ccc;
+  }
+
+  ul.enlarge li:hover span {
+    width: 319px !important;
+    top: -250px;
+    left: -1px;
+  }
+
+  ul.enlarge li:hover:nth-child(2) span {
+    width: 319px !important;
+    left: -63px;
+  }
+
+  ul.enlarge li:hover:nth-child(3) span {
+    width: 319px !important;
+    left: -125px;
+  }
+
+  ul.enlarge li.active span {
+    width: 319px !important;
+    top: -250px;
+    left: -1px;
+  }
+
+  ul.enlarge li.active:nth-child(2) span {
+    width: 319px !important;
+    left: -63px;
+  }
+
+  ul.enlarge li.active:nth-child(3) span {
+    width: 319px !important;
+    left: -125px;
+  }
+}
 .price-over-time {
   border: 1px solid #ccc;
   height: 300px;
   margin-bottom: 20px;
+}
+
+.fusion-chart {
+  width: 1080px;
+  margin-left: 80px;
+  margin-top: 20px;
 }
 
 .sourcing-event {
@@ -102,7 +152,11 @@ ul.enlarge span img {
   font-size: 27px;
   color: #ccc;
   float: left;
-  padding: 5px 5px 0 0;
+  padding: 0 5px 0 0;
+}
+.sourcing-event .file-icon img {
+  height: 38px;
+  width: 38px;
 }
 .sourcing-event .file-name {
   font-size: 12px;
@@ -111,6 +165,27 @@ ul.enlarge span img {
 .spend-overview {
   border: 1px solid #ccc;
   height: 300px;
+  font-size: 13px;
+}
+.spend-overview .row-height {
+  height: 20px;
+}
+.spend-overview table {
+  margin: 10px 50px 20px 70px;
+}
+.spend-overview table tr td {
+  padding: 20px 40px;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.spend-overview table tr td span {
+  padding-left: 40px;
+}
+.spend-overview table tr td:last-child {
+  border-right: 0;
+}
+.spend-overview .total-name {
+  color: #ccc;
 }
 
 .material-detail {
@@ -125,4 +200,9 @@ ul.enlarge span img {
 }
 .material-detail .material-name {
   font-size: 18px;
+}
+
+/** SM Fusion Chart - sfc */
+.sfc {
+  overflow: hidden;
 }

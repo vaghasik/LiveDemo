@@ -15,8 +15,9 @@ module.exports = function(grunt) {
 		        sourcemap: 'none'
 		      },
 		      files: {                         // Dictionary of files
-		       // 'WebContent/bom/app/css/bomPartdashboard.css': 'WebContent/bom/app/bom_part_dashboard_scss/main.scss' // 'destination': 'source'
-		    	  'app/css/main.css': 'app/scss/main.scss'
+		       //'WebContent/bom/app/css/bomPartdashboard.css': 'WebContent/bom/app/bom_part_dashboard_scss/main.scss' // 'destination': 'source'
+		    	'app/css/main.css': 'app/scss/main.scss'
+		    	 // 'app/css/main1.css': 'app/testsass/main.scss'
 		      }
 		    }
 		  }

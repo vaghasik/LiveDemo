@@ -1,38 +1,11 @@
-<div class="sourcing-event">
+<div class="sourcing-event" ng-controller="sourcingEventCtrl">
 	<div class="title-name">Sourcing events</div>
-	<div>
-		<span class="glyphicon glyphicon-file file-icon" aria-hidden="true"></span>
+	<div ng-repeat="event in events">
+		<!-- <span class="{{ event.fileIcon }}" aria-hidden="true"></span> -->
+		<span class="file-icon"><img src="{{ event.fileIcon }}"/></span>
 		<span>
-			<span class="small-label">Apr 20 2016 9:20 am</span><br>
-			<span class="file-name"><a href="#">Supplier name 1</a> returned <a href="#">quote ID12344</a></span>
-		</span>
-	</div>
-	<div>
-		<span class="glyphicon glyphicon-file file-icon" aria-hidden="true"></span>
-		<span>
-			<span class="small-label">Apr 20 2016 9:20 am</span><br>
-			<span class="file-name"><a href="#">Supplier name 1</a> returned <a href="#">quote ID12344</a></span>
-		</span>
-	</div>
-	<div>
-		<span class="glyphicon glyphicon-file file-icon" aria-hidden="true"></span>
-		<span>
-			<span class="small-label">Apr 20 2016 9:20 am</span><br>
-			<span class="file-name"><a href="#">Supplier name 1</a> returned <a href="#">quote ID12344</a></span>
-		</span>
-	</div>
-	<div>
-		<span class="glyphicon glyphicon-file file-icon" aria-hidden="true"></span>
-		<span>
-			<span class="small-label">Apr 20 2016 9:20 am</span><br>
-			<span class="file-name"><a href="#">Supplier name 1</a> returned <a href="#">quote ID12344</a></span>
-		</span>
-	</div>
-	<div>
-		<span class="glyphicon glyphicon-file file-icon" aria-hidden="true"></span>
-		<span>
-			<span class="small-label">Apr 20 2016 9:20 am</span><br>
-			<span class="file-name"><a href="#">Supplier name 1</a> returned <a href="#">quote ID12344</a></span>
+			<span class="small-label">{{ event.time }}</span><br>
+			<span class="file-name"><a href="#">{{ event.name }}</a> {{ event.status }} <a href="#">{{ event.quoteID }}</a></span>
 		</span>
 	</div>
 	<div>

@@ -1,4 +1,28 @@
 .spend-overview {
 	border: 1px solid #ccc;
-	    height: 300px;
+	height: 300px;
+	font-size: 13px;
+	.row-height {
+		height: 20px;
+	}
+	table {
+		margin: 10px 50px 20px 70px;
+		tr{
+			td{
+				padding: 20px 40px;
+    			border-top: 1px solid #ccc;
+    			border-right: 1px solid #ccc;
+    			span {
+    				padding-left: 40px;
+    			}
+    			&:last-child {
+    				border-right: 0;
+				}
+			}
+		}
+	}
+	.total-name {
+		color: #ccc;
+		
+	}
 }

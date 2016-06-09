@@ -1,0 +1,61 @@
+
+
+.dt-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.dt-header {
+    background-color: #ECECEC;
+    border-bottom: 1px solid #d7d7d7;
+    border-top: 1px solid #d7d7d7;
+}
+
+.dt-row {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.dt-row:hover {
+    background-color: #ff00ff;
+}
+
+tr.dt-header > td, tr.dt-row > td {
+    padding: 10px 0;
+}
+
+tr.dt-header td:first-child, tr.dt-row td:first-child {
+    padding-left: 15px;
+}
+
+.dt-header-col {
+    color: #636363;
+}
+
+.dt-btn-area {
+    background-color: #6496e7;
+    padding: 10px 25px;
+}
+
+.dt-details-link {
+    font-size: 12px;
+}
+
+.dt-btn {
+    margin: 0 5px;
+}
+
+.dt-alert {
+    color: #f8fbc8;
+    font-size: 14px;
+}
+
+.dt-circle {
+    @include circle ($dt-circle-color, $dt-circle-size);
+    color: $primary-bg-color;
+    font-size: $txt-sz-sm;
+    text-align: center;
+}
+
+.dt-inner-circle {
+    margin-top: 4px;
+}

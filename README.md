@@ -16,6 +16,7 @@ npm install grunt --save-dev
 npm install grunt-serve --save-dev
 npm install grunt-contrib-sass --save-dev
 bower install angular-route --save-dev
+bower install fusioncharts --save-dev
 
 IE10+ hack
 
